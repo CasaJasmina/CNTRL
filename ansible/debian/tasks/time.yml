@@ -1,0 +1,3 @@
+---
+- name: set date
+  command: echo ntpdate 1.debian.pool.ntp.org

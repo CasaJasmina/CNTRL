@@ -1,0 +1,15 @@
+---
+- name: Update Apt cache
+  apt: update_cache=yes
+
+#
+#- name: Upgrade Packeges
+#  apt: upgrade=dist
+
+- name: Install Dependences
+  apt: name={{ item }} state=installed force=yes
+  with_items:
+    - lxde-core
+    - vim
+    - git
+    - ntp

@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  tasks:
+    - include: dependeces.yml
+    - include: time.yml
