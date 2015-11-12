@@ -1,19 +1,19 @@
 ---
 - hosts: localhost
   tasks:
-    - name: Download mosquitto's gpg key
+    - name: Download Mosquitto's GPG key
       get_url: >
         dest=/tmp/
         url="http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key"
       tags: [mosquitto]
 
-    - name: Add pgp key to apt
+    - name: Add PGP key to Apt
       command: apt-key add /tmp/mosquitto-repo.gpg.key
       tags: [mosquitto]
 
-    - name: Download mosquitto's Debian repository
+    - name: Download Mosquitto's Debian repository
       get_url: >
-        dest=/tmp/
+        dest=/etc/apt/sources.list.d/
         url="http://repo.mosquitto.org/debian/mosquitto-jessie.list"
       tags: [mosquitto]
 
@@ -26,9 +26,11 @@
         name=mosquitto
         state=installed
         force=yes
+      tags: [mosquitto]
 
     - name: Install Mosquitto-clients
       apt: >
         name=mosquitto-clients
         state=installed
         force=yes
+      tags: [mosquitto]
