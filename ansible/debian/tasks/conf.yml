@@ -1,0 +1,10 @@
+---
+- name: Copy Motd
+  copy:
+    src: "{{ ansible_dir }}/roles/conf/src/etc/motd"
+    dest: /etc/motd
+
+- name: Copy networking interfaces
+  template:
+    src: interfaces.jinja
+    dest: /etc/network/interfaces

@@ -3,3 +3,4 @@
   tasks:
     - include: dependeces.yml
     - include: time.yml
+    - include: conf.yml
