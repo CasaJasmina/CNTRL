@@ -1,0 +1,3 @@
+# XBMC repos
+deb https://people.debian.org/~rbalint/ppa/xbmc-ffmpeg xbmc-ffmpeg-unstable/
+deb http://http.debian.net/debian unstable main
