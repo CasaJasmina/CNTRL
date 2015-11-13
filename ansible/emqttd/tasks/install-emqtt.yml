@@ -1,0 +1,10 @@
+---
+  - name: Download emqtt
+    get_url: >
+      dest=/tmp/
+      url="http://emqtt.io/downloads/ubuntu"
+
+    - name: Unzip emqtt
+      unarchive: >
+        src=/tmp/ubuntu
+        dest=/srv/
