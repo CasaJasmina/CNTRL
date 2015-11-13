@@ -10,6 +10,7 @@ Above the list of contents.
 ### Content
 * [Ansible](http://www.ansible.com/)
   * [Mosquitto](http://mosquitto.org/)
+  * [Emqtt](https://github.com/emqtt)
   * Debian (basic conf)
   * [Xbmc](http://kodi.tv/)
 
@@ -18,14 +19,15 @@ Above the list of contents.
 - [x] Basic xbmc integration
 - [ ] Inlcude mosquitto/xbmc conf
 
+
 ## Running
 
 * Install Ansible in your local machine -> [follow the guide for your os](https://docs.ansible.com/ansible/intro_installation.html)
 * Git clone this repository
 ```
-~$ git clone git@github.com:CasaJasmina/CNTRL.git
-~$ cd CNTRL
-~$ git checkout master
+$ git clone git@github.com:CasaJasmina/CNTRL.git
+$ cd CNTRL
+$ git checkout master
 ```
 * Edit vars configurations files
 * Set your hosts
