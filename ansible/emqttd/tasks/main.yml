@@ -1,5 +1,3 @@
 ---
-- hosts: localhost
-  tasks:
-    - include: dependeces.yml
-    - include: install-emqtt.yml
+  - include: dependeces.yml
+  - include: install-emqtt.yml
