@@ -13,3 +13,11 @@
 
   roles:
     - emqttd
+
+- name: Install xbmc
+  hosts: all
+  remote_user: vagrant
+  sudo: yes
+
+  roles:
+    - xbmc
