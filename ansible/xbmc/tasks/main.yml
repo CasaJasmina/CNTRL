@@ -1,0 +1,28 @@
+---
+- hosts: localhost
+  tasks:
+
+    - name: Copy XBMC
+      copy:
+        src: ./xbmc/etc/xbmc.list
+        dest: /etc/apt/sources.list.d/xbmc.list
+      tags: [xbmc]
+
+    - name: Update Apt Cache
+      apt: >
+        update_cache=yes
+
+    - name: Install xbmc
+      apt: >
+        name=kodi
+        state=installed
+        force=yes
+      tags: [xbmc]
+
+## TODO add lxde conf, autologin and bootstrap
+    - name: Install LXDE
+      apt: >
+        name=lxde-core
+        state=installed
+        force=yes
+      tags: [xbmc]
