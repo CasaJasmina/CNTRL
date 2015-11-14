@@ -14,6 +14,14 @@
   roles:
     - emqttd
 
+- name: Install mosquitto
+  hosts: all
+  remote_user: "{{ remote_user }}"
+  sudo: yes
+
+  roles:
+    - mosquitto
+
 - name: Install xbmc
   hosts: all
   remote_user: "{{ remote_user }}"
