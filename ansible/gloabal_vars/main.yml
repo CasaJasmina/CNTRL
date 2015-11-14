@@ -1,0 +1,4 @@
+---
+# User
+    remote_user: vagrant
+    password:

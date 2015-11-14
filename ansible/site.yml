@@ -1,6 +1,6 @@
 - name: Debian conf
   hosts: all
-  remote_user: vagrant
+  remote_user: "{{ remote_user }}"
   sudo: yes
 
   roles:
@@ -8,7 +8,7 @@
 
 - name: Install emqtt
   hosts: all
-  remote_user: vagrant
+  remote_user: "{{ remote_user }}"
   sudo: no
 
   roles:
@@ -16,7 +16,7 @@
 
 - name: Install xbmc
   hosts: all
-  remote_user: vagrant
+  remote_user: "{{ remote_user }}"
   sudo: yes
 
   roles:
