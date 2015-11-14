@@ -1,0 +1,15 @@
+- name: Debian conf
+  hosts: all
+  remote_user: vagrant
+  sudo: yes
+
+  roles:
+    - debian
+
+- name: Install emqtt
+  hosts: all
+  remote_user: vagrant
+  sudo: no
+
+  roles:
+    - emqttd
