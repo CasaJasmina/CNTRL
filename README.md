@@ -17,7 +17,7 @@ Above the list of contents.
 ### TODO
 
 - [x] Basic xbmc integration
-- [ ] Inlcude mosquitto/xbmc conf
+- [x] Inlcude mosquitto/xbmc conf
 
 
 ## Running
