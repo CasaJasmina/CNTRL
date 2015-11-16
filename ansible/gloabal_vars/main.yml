@@ -1,4 +1,3 @@
 ---
 # User
-    remote_user: vagrant
-    password:
+    remote_user:
