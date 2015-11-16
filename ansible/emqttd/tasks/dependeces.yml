@@ -2,12 +2,13 @@
 - name: Update Apt cache
   apt: >
     update_cache=yes
+  sudo: yes
 
 - name: Install Dependences
   apt: >
     name={{ item }}
     state=installed
-    force=yes
+  sudo: yes
 
   with_items:
     - zip
