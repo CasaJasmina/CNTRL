@@ -9,7 +9,7 @@
 - name: Install emqtt
   hosts: all
   remote_user: "{{ remote_user }}"
-  sudo: no
+  sudo: yes
 
   roles:
     - emqttd
